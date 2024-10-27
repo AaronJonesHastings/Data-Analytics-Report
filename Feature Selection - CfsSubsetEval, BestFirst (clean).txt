@@ -1,0 +1,48 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.CfsSubsetEval -P 1 -E 1
+Search:       weka.attributeSelection.BestFirst -D 1 -N 5
+Relation:     Air Quality Data - Cleaned No Blanks, City or Date - all zeros removed
+Instances:    5969
+Attributes:   14
+              PM2.5
+              PM10
+              NO
+              NO2
+              NOx
+              NH3
+              CO
+              SO2
+              O3
+              Benzene
+              Toluene
+              Xylene
+              AQI
+              AQI_Bucket
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 68
+	Merit of best subset found:    1    
+
+Attribute Subset Evaluator (supervised, Class (nominal): 14 AQI_Bucket):
+	CFS Subset Evaluator
+	Including locally predictive attributes
+
+Selected attributes: 1,2,4,6,7,9,13 : 7
+                     PM2.5
+                     PM10
+                     NO2
+                     NH3
+                     CO
+                     O3
+                     AQI
+
